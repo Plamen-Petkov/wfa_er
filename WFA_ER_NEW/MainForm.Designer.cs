@@ -33,7 +33,7 @@
             this.txtPIN = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblMKB = new System.Windows.Forms.Label();
             this.cmbMKB = new System.Windows.Forms.ComboBox();
@@ -64,6 +64,8 @@
             this.lblOther = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtDataTime = new System.Windows.Forms.TextBox();
+            this.lblDateTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownКК)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -103,6 +105,7 @@
             // 
             this.txtPIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtPIN.Location = new System.Drawing.Point(98, 88);
+            this.txtPIN.MaxLength = 10;
             this.txtPIN.Name = "txtPIN";
             this.txtPIN.Size = new System.Drawing.Size(125, 26);
             this.txtPIN.TabIndex = 2;
@@ -125,13 +128,13 @@
             this.lblFirstName.TabIndex = 3;
             this.lblFirstName.Text = "Име";
             // 
-            // textBox1
+            // txtLastName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(98, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 26);
-            this.textBox1.TabIndex = 6;
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtLastName.Location = new System.Drawing.Point(98, 152);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(125, 26);
+            this.txtLastName.TabIndex = 6;
             // 
             // lblLastName
             // 
@@ -147,7 +150,7 @@
             // 
             this.lblMKB.AutoSize = true;
             this.lblMKB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblMKB.Location = new System.Drawing.Point(11, 190);
+            this.lblMKB.Location = new System.Drawing.Point(11, 224);
             this.lblMKB.Name = "lblMKB";
             this.lblMKB.Size = new System.Drawing.Size(81, 20);
             this.lblMKB.TabIndex = 7;
@@ -157,7 +160,7 @@
             // 
             this.cmbMKB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cmbMKB.FormattingEnabled = true;
-            this.cmbMKB.Location = new System.Drawing.Point(98, 182);
+            this.cmbMKB.Location = new System.Drawing.Point(98, 216);
             this.cmbMKB.Name = "cmbMKB";
             this.cmbMKB.Size = new System.Drawing.Size(125, 28);
             this.cmbMKB.TabIndex = 8;
@@ -166,7 +169,7 @@
             // 
             this.lblKLabKK.AutoSize = true;
             this.lblKLabKK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblKLabKK.Location = new System.Drawing.Point(12, 242);
+            this.lblKLabKK.Location = new System.Drawing.Point(12, 276);
             this.lblKLabKK.Name = "lblKLabKK";
             this.lblKLabKK.Size = new System.Drawing.Size(134, 20);
             this.lblKLabKK.TabIndex = 9;
@@ -175,7 +178,7 @@
             // numUpDownКК
             // 
             this.numUpDownКК.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numUpDownКК.Location = new System.Drawing.Point(177, 236);
+            this.numUpDownКК.Location = new System.Drawing.Point(177, 270);
             this.numUpDownКК.Name = "numUpDownКК";
             this.numUpDownКК.Size = new System.Drawing.Size(46, 26);
             this.numUpDownКК.TabIndex = 10;
@@ -184,7 +187,7 @@
             // 
             this.lblKLab.AutoSize = true;
             this.lblKLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblKLab.Location = new System.Drawing.Point(11, 213);
+            this.lblKLab.Location = new System.Drawing.Point(11, 247);
             this.lblKLab.Name = "lblKLab";
             this.lblKLab.Size = new System.Drawing.Size(187, 20);
             this.lblKLab.TabIndex = 11;
@@ -193,7 +196,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown1.Location = new System.Drawing.Point(177, 267);
+            this.numericUpDown1.Location = new System.Drawing.Point(177, 301);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
             this.numericUpDown1.TabIndex = 13;
@@ -202,7 +205,7 @@
             // 
             this.lblKLabOther.AutoSize = true;
             this.lblKLabOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblKLabOther.Location = new System.Drawing.Point(12, 273);
+            this.lblKLabOther.Location = new System.Drawing.Point(12, 307);
             this.lblKLabOther.Name = "lblKLabOther";
             this.lblKLabOther.Size = new System.Drawing.Size(159, 20);
             this.lblKLabOther.TabIndex = 12;
@@ -211,7 +214,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown2.Location = new System.Drawing.Point(177, 296);
+            this.numericUpDown2.Location = new System.Drawing.Point(177, 330);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(46, 26);
             this.numericUpDown2.TabIndex = 15;
@@ -220,7 +223,7 @@
             // 
             this.lblUrina.AutoSize = true;
             this.lblUrina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblUrina.Location = new System.Drawing.Point(12, 302);
+            this.lblUrina.Location = new System.Drawing.Point(12, 336);
             this.lblUrina.Name = "lblUrina";
             this.lblUrina.Size = new System.Drawing.Size(152, 20);
             this.lblUrina.TabIndex = 14;
@@ -230,7 +233,7 @@
             // 
             this.lblOD.AutoSize = true;
             this.lblOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblOD.Location = new System.Drawing.Point(12, 325);
+            this.lblOD.Location = new System.Drawing.Point(12, 359);
             this.lblOD.Name = "lblOD";
             this.lblOD.Size = new System.Drawing.Size(176, 20);
             this.lblOD.TabIndex = 16;
@@ -239,7 +242,7 @@
             // numericUpDownKAT
             // 
             this.numericUpDownKAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownKAT.Location = new System.Drawing.Point(177, 409);
+            this.numericUpDownKAT.Location = new System.Drawing.Point(177, 443);
             this.numericUpDownKAT.Name = "numericUpDownKAT";
             this.numericUpDownKAT.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownKAT.TabIndex = 22;
@@ -248,7 +251,7 @@
             // 
             this.lblKAT.AutoSize = true;
             this.lblKAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblKAT.Location = new System.Drawing.Point(12, 415);
+            this.lblKAT.Location = new System.Drawing.Point(12, 449);
             this.lblKAT.Name = "lblKAT";
             this.lblKAT.Size = new System.Drawing.Size(39, 20);
             this.lblKAT.TabIndex = 21;
@@ -257,7 +260,7 @@
             // numericUpDownUZ
             // 
             this.numericUpDownUZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownUZ.Location = new System.Drawing.Point(177, 380);
+            this.numericUpDownUZ.Location = new System.Drawing.Point(177, 414);
             this.numericUpDownUZ.Name = "numericUpDownUZ";
             this.numericUpDownUZ.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownUZ.TabIndex = 20;
@@ -266,7 +269,7 @@
             // 
             this.lblUZ.AutoSize = true;
             this.lblUZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblUZ.Location = new System.Drawing.Point(12, 386);
+            this.lblUZ.Location = new System.Drawing.Point(12, 420);
             this.lblUZ.Name = "lblUZ";
             this.lblUZ.Size = new System.Drawing.Size(88, 20);
             this.lblUZ.TabIndex = 19;
@@ -275,7 +278,7 @@
             // numericUpDownRentgen
             // 
             this.numericUpDownRentgen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownRentgen.Location = new System.Drawing.Point(177, 349);
+            this.numericUpDownRentgen.Location = new System.Drawing.Point(177, 383);
             this.numericUpDownRentgen.Name = "numericUpDownRentgen";
             this.numericUpDownRentgen.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownRentgen.TabIndex = 18;
@@ -284,7 +287,7 @@
             // 
             this.lblRentgen.AutoSize = true;
             this.lblRentgen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblRentgen.Location = new System.Drawing.Point(12, 355);
+            this.lblRentgen.Location = new System.Drawing.Point(12, 389);
             this.lblRentgen.Name = "lblRentgen";
             this.lblRentgen.Size = new System.Drawing.Size(138, 20);
             this.lblRentgen.TabIndex = 17;
@@ -294,7 +297,7 @@
             // 
             this.lblManipolations.AutoSize = true;
             this.lblManipolations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblManipolations.Location = new System.Drawing.Point(22, 447);
+            this.lblManipolations.Location = new System.Drawing.Point(22, 481);
             this.lblManipolations.Name = "lblManipolations";
             this.lblManipolations.Size = new System.Drawing.Size(111, 20);
             this.lblManipolations.TabIndex = 23;
@@ -303,7 +306,7 @@
             // numericUpDownSuture
             // 
             this.numericUpDownSuture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownSuture.Location = new System.Drawing.Point(177, 470);
+            this.numericUpDownSuture.Location = new System.Drawing.Point(177, 504);
             this.numericUpDownSuture.Name = "numericUpDownSuture";
             this.numericUpDownSuture.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownSuture.TabIndex = 25;
@@ -312,7 +315,7 @@
             // 
             this.lblSuture.AutoSize = true;
             this.lblSuture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblSuture.Location = new System.Drawing.Point(12, 476);
+            this.lblSuture.Location = new System.Drawing.Point(12, 510);
             this.lblSuture.Name = "lblSuture";
             this.lblSuture.Size = new System.Drawing.Size(40, 20);
             this.lblSuture.TabIndex = 24;
@@ -321,7 +324,7 @@
             // numericUpDownForeignMather
             // 
             this.numericUpDownForeignMather.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownForeignMather.Location = new System.Drawing.Point(177, 501);
+            this.numericUpDownForeignMather.Location = new System.Drawing.Point(177, 535);
             this.numericUpDownForeignMather.Name = "numericUpDownForeignMather";
             this.numericUpDownForeignMather.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownForeignMather.TabIndex = 27;
@@ -330,7 +333,7 @@
             // 
             this.lblForeignMather.AutoSize = true;
             this.lblForeignMather.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblForeignMather.Location = new System.Drawing.Point(12, 507);
+            this.lblForeignMather.Location = new System.Drawing.Point(12, 541);
             this.lblForeignMather.Name = "lblForeignMather";
             this.lblForeignMather.Size = new System.Drawing.Size(159, 20);
             this.lblForeignMather.TabIndex = 26;
@@ -339,7 +342,7 @@
             // numericUpDownBandaging
             // 
             this.numericUpDownBandaging.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownBandaging.Location = new System.Drawing.Point(177, 530);
+            this.numericUpDownBandaging.Location = new System.Drawing.Point(177, 564);
             this.numericUpDownBandaging.Name = "numericUpDownBandaging";
             this.numericUpDownBandaging.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownBandaging.TabIndex = 29;
@@ -348,7 +351,7 @@
             // 
             this.lblBandaging.AutoSize = true;
             this.lblBandaging.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBandaging.Location = new System.Drawing.Point(12, 536);
+            this.lblBandaging.Location = new System.Drawing.Point(12, 570);
             this.lblBandaging.Name = "lblBandaging";
             this.lblBandaging.Size = new System.Drawing.Size(93, 20);
             this.lblBandaging.TabIndex = 28;
@@ -357,7 +360,7 @@
             // numericUpDownImobilizations
             // 
             this.numericUpDownImobilizations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownImobilizations.Location = new System.Drawing.Point(177, 560);
+            this.numericUpDownImobilizations.Location = new System.Drawing.Point(177, 594);
             this.numericUpDownImobilizations.Name = "numericUpDownImobilizations";
             this.numericUpDownImobilizations.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownImobilizations.TabIndex = 31;
@@ -366,7 +369,7 @@
             // 
             this.lblImobilization.AutoSize = true;
             this.lblImobilization.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblImobilization.Location = new System.Drawing.Point(12, 566);
+            this.lblImobilization.Location = new System.Drawing.Point(12, 600);
             this.lblImobilization.Name = "lblImobilization";
             this.lblImobilization.Size = new System.Drawing.Size(121, 20);
             this.lblImobilization.TabIndex = 30;
@@ -375,7 +378,7 @@
             // numericUpDownOther
             // 
             this.numericUpDownOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownOther.Location = new System.Drawing.Point(177, 589);
+            this.numericUpDownOther.Location = new System.Drawing.Point(177, 623);
             this.numericUpDownOther.Name = "numericUpDownOther";
             this.numericUpDownOther.Size = new System.Drawing.Size(46, 26);
             this.numericUpDownOther.TabIndex = 33;
@@ -384,7 +387,7 @@
             // 
             this.lblOther.AutoSize = true;
             this.lblOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblOther.Location = new System.Drawing.Point(12, 595);
+            this.lblOther.Location = new System.Drawing.Point(12, 629);
             this.lblOther.Name = "lblOther";
             this.lblOther.Size = new System.Drawing.Size(53, 20);
             this.lblOther.TabIndex = 32;
@@ -393,13 +396,14 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSave.Location = new System.Drawing.Point(71, 649);
+            this.btnSave.Location = new System.Drawing.Point(71, 683);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 27);
             this.btnSave.TabIndex = 34;
             this.btnSave.Text = "Запис";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // dataGridView1
             // 
@@ -409,11 +413,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(1217, 828);
             this.dataGridView1.TabIndex = 35;
             // 
+            // txtDataTime
+            // 
+            this.txtDataTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtDataTime.Location = new System.Drawing.Point(98, 184);
+            this.txtDataTime.Name = "txtDataTime";
+            this.txtDataTime.Size = new System.Drawing.Size(125, 26);
+            this.txtDataTime.TabIndex = 37;
+            // 
+            // lblDateTime
+            // 
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDateTime.Location = new System.Drawing.Point(6, 190);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(94, 20);
+            this.lblDateTime.TabIndex = 36;
+            this.lblDateTime.Text = "Дата и Час";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1464, 894);
+            this.Controls.Add(this.txtDataTime);
+            this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.numericUpDownOther);
@@ -443,7 +467,7 @@
             this.Controls.Add(this.lblKLabKK);
             this.Controls.Add(this.cmbMKB);
             this.Controls.Add(this.lblMKB);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblFirstName);
@@ -453,6 +477,7 @@
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownКК)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -477,7 +502,7 @@
         private System.Windows.Forms.TextBox txtPIN;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblMKB;
         private System.Windows.Forms.ComboBox cmbMKB;
@@ -508,5 +533,7 @@
         private System.Windows.Forms.Label lblOther;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtDataTime;
+        private System.Windows.Forms.Label lblDateTime;
     }
 }
