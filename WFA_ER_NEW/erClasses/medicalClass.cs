@@ -112,11 +112,12 @@ namespace WFA_ER_NEW.erClasses
         public bool Update(medicalClass m)
         {
             bool isSuccess = false;
-            SqlConnection conn = new SqlConnection();
+            SqlConnection conn = new SqlConnection(myconnstring);
             try
             {
-                string sql = "UPDATE ambulance SET pin=@pin , FirstName=@FirstName, LastName=@LastName, DataTime=@DataTime, mkb=@mkb, KLabKK=@KLabKK, KLabOther=@KLabOther, KLabUrina=@KLabUrina, Rentgen=@Rentgen, UZD=@UZD, KAT=@KAT, suture=@suture, foreignMatter=@foreignMatter, bandaging=@bandaging, Immobilization=@Immobilization, other=@other";
+                string sql = "UPDATE ambulance SET pin=@pin, FirstName=@FirstName, LastName=@LastName, DataTime=@DataTime, mkb=@mkb, KLabKK=@KLabKK, KLabOther=@KLabOther, KLabUrina=@KLabUrina, Rentgen=@Rentgen, UZD=@UZD, KAT=@KAT, suture=@suture, foreignMatter=@foreignMatter, bandaging=@bandaging, Immobilization=@Immobilization, other=@other WHERE ambNo=@ambNo";
                 SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@ambNo", m.ambNo);
                 cmd.Parameters.AddWithValue("@pin", m.pin);
                 cmd.Parameters.AddWithValue("@FirstName", m.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", m.LastName);
@@ -158,10 +159,10 @@ namespace WFA_ER_NEW.erClasses
         public bool Delete(medicalClass m)
         {
             bool isSuccess = false;
-            SqlConnection conn = new SqlConnection();
+            SqlConnection conn = new SqlConnection(myconnstring);
             try
             {
-                string sql = "DELETE FROM ambilance WHERE ambNo=@ambNo";
+                string sql = "DELETE FROM ambulance WHERE ambNo=@ambNo";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@ambNo", m.ambNo);
                 conn.Open();
@@ -184,6 +185,7 @@ namespace WFA_ER_NEW.erClasses
             {
                 conn.Close();
             }
+            return isSuccess;
         }
     }
 }

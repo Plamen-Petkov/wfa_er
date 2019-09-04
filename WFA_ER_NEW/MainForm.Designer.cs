@@ -66,6 +66,10 @@
             this.dgvMedical = new System.Windows.Forms.DataGridView();
             this.txtDataTime = new System.Windows.Forms.TextBox();
             this.lblDateTime = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.txtAmbNo = new System.Windows.Forms.TextBox();
+            this.lblAmbNo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownКК)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabOther)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabUrina)).BeginInit();
@@ -399,7 +403,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSave.Location = new System.Drawing.Point(71, 683);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 27);
+            this.btnSave.Size = new System.Drawing.Size(100, 27);
             this.btnSave.TabIndex = 34;
             this.btnSave.Text = "Запис";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -416,6 +420,7 @@
             this.dgvMedical.Name = "dgvMedical";
             this.dgvMedical.Size = new System.Drawing.Size(1217, 828);
             this.dgvMedical.TabIndex = 35;
+            this.dgvMedical.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvMedical_RowHeaderMouseClick);
             // 
             // txtDataTime
             // 
@@ -435,11 +440,60 @@
             this.lblDateTime.TabIndex = 36;
             this.lblDateTime.Text = "Дата и Час";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUpdate.Location = new System.Drawing.Point(71, 727);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(100, 27);
+            this.btnUpdate.TabIndex = 38;
+            this.btnUpdate.Text = "Редакция";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDelete.Location = new System.Drawing.Point(71, 772);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 27);
+            this.btnDelete.TabIndex = 39;
+            this.btnDelete.Text = "Изтрий";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // txtAmbNo
+            // 
+            this.txtAmbNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtAmbNo.Location = new System.Drawing.Point(98, 56);
+            this.txtAmbNo.MaxLength = 10;
+            this.txtAmbNo.Name = "txtAmbNo";
+            this.txtAmbNo.ReadOnly = true;
+            this.txtAmbNo.Size = new System.Drawing.Size(125, 26);
+            this.txtAmbNo.TabIndex = 41;
+            // 
+            // lblAmbNo
+            // 
+            this.lblAmbNo.AutoSize = true;
+            this.lblAmbNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAmbNo.Location = new System.Drawing.Point(11, 62);
+            this.lblAmbNo.Name = "lblAmbNo";
+            this.lblAmbNo.Size = new System.Drawing.Size(63, 20);
+            this.lblAmbNo.TabIndex = 40;
+            this.lblAmbNo.Text = "Амб. №";
+            this.lblAmbNo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1464, 894);
+            this.Controls.Add(this.txtAmbNo);
+            this.Controls.Add(this.lblAmbNo);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtDataTime);
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.dgvMedical);
@@ -539,5 +593,9 @@
         private System.Windows.Forms.DataGridView dgvMedical;
         private System.Windows.Forms.TextBox txtDataTime;
         private System.Windows.Forms.Label lblDateTime;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox txtAmbNo;
+        private System.Windows.Forms.Label lblAmbNo;
     }
 }
