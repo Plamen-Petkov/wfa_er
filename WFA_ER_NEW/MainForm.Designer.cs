@@ -40,48 +40,49 @@
             this.lblKLabKK = new System.Windows.Forms.Label();
             this.numUpDownКК = new System.Windows.Forms.NumericUpDown();
             this.lblKLab = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownKLabOther = new System.Windows.Forms.NumericUpDown();
             this.lblKLabOther = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownKLabUrina = new System.Windows.Forms.NumericUpDown();
             this.lblUrina = new System.Windows.Forms.Label();
             this.lblOD = new System.Windows.Forms.Label();
-            this.numericUpDownKAT = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownKAT = new System.Windows.Forms.NumericUpDown();
             this.lblKAT = new System.Windows.Forms.Label();
-            this.numericUpDownUZ = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownUZ = new System.Windows.Forms.NumericUpDown();
             this.lblUZ = new System.Windows.Forms.Label();
-            this.numericUpDownRentgen = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownRentgen = new System.Windows.Forms.NumericUpDown();
             this.lblRentgen = new System.Windows.Forms.Label();
             this.lblManipolations = new System.Windows.Forms.Label();
-            this.numericUpDownSuture = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownSuture = new System.Windows.Forms.NumericUpDown();
             this.lblSuture = new System.Windows.Forms.Label();
-            this.numericUpDownForeignMather = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownForeignMather = new System.Windows.Forms.NumericUpDown();
             this.lblForeignMather = new System.Windows.Forms.Label();
-            this.numericUpDownBandaging = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownBandaging = new System.Windows.Forms.NumericUpDown();
             this.lblBandaging = new System.Windows.Forms.Label();
-            this.numericUpDownImobilizations = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownImobilizations = new System.Windows.Forms.NumericUpDown();
             this.lblImobilization = new System.Windows.Forms.Label();
-            this.numericUpDownOther = new System.Windows.Forms.NumericUpDown();
+            this.numUpDownOther = new System.Windows.Forms.NumericUpDown();
             this.lblOther = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMedical = new System.Windows.Forms.DataGridView();
             this.txtDataTime = new System.Windows.Forms.TextBox();
             this.lblDateTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownКК)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKAT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUZ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRentgen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownForeignMather)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBandaging)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownImobilizations)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOther)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabOther)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabUrina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKAT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownUZ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownRentgen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownSuture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownForeignMather)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownBandaging)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownImobilizations)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownOther)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedical)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnLogout.Location = new System.Drawing.Point(1384, 3);
             this.btnLogout.Name = "btnLogout";
@@ -193,13 +194,13 @@
             this.lblKLab.TabIndex = 11;
             this.lblKLab.Text = "Клинична лаборатория";
             // 
-            // numericUpDown1
+            // numUpDownKLabOther
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown1.Location = new System.Drawing.Point(177, 301);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDown1.TabIndex = 13;
+            this.numUpDownKLabOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownKLabOther.Location = new System.Drawing.Point(177, 301);
+            this.numUpDownKLabOther.Name = "numUpDownKLabOther";
+            this.numUpDownKLabOther.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownKLabOther.TabIndex = 13;
             // 
             // lblKLabOther
             // 
@@ -211,13 +212,13 @@
             this.lblKLabOther.TabIndex = 12;
             this.lblKLabOther.Text = "Други Кръвни Изсл.";
             // 
-            // numericUpDown2
+            // numUpDownKLabUrina
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown2.Location = new System.Drawing.Point(177, 330);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDown2.TabIndex = 15;
+            this.numUpDownKLabUrina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownKLabUrina.Location = new System.Drawing.Point(177, 330);
+            this.numUpDownKLabUrina.Name = "numUpDownKLabUrina";
+            this.numUpDownKLabUrina.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownKLabUrina.TabIndex = 15;
             // 
             // lblUrina
             // 
@@ -239,13 +240,13 @@
             this.lblOD.TabIndex = 16;
             this.lblOD.Text = "Образна Диагностика";
             // 
-            // numericUpDownKAT
+            // numUpDownKAT
             // 
-            this.numericUpDownKAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownKAT.Location = new System.Drawing.Point(177, 443);
-            this.numericUpDownKAT.Name = "numericUpDownKAT";
-            this.numericUpDownKAT.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownKAT.TabIndex = 22;
+            this.numUpDownKAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownKAT.Location = new System.Drawing.Point(177, 443);
+            this.numUpDownKAT.Name = "numUpDownKAT";
+            this.numUpDownKAT.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownKAT.TabIndex = 22;
             // 
             // lblKAT
             // 
@@ -257,13 +258,13 @@
             this.lblKAT.TabIndex = 21;
             this.lblKAT.Text = "КАТ";
             // 
-            // numericUpDownUZ
+            // numUpDownUZ
             // 
-            this.numericUpDownUZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownUZ.Location = new System.Drawing.Point(177, 414);
-            this.numericUpDownUZ.Name = "numericUpDownUZ";
-            this.numericUpDownUZ.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownUZ.TabIndex = 20;
+            this.numUpDownUZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownUZ.Location = new System.Drawing.Point(177, 414);
+            this.numUpDownUZ.Name = "numUpDownUZ";
+            this.numUpDownUZ.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownUZ.TabIndex = 20;
             // 
             // lblUZ
             // 
@@ -275,13 +276,13 @@
             this.lblUZ.TabIndex = 19;
             this.lblUZ.Text = "Ултразвук";
             // 
-            // numericUpDownRentgen
+            // numUpDownRentgen
             // 
-            this.numericUpDownRentgen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownRentgen.Location = new System.Drawing.Point(177, 383);
-            this.numericUpDownRentgen.Name = "numericUpDownRentgen";
-            this.numericUpDownRentgen.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownRentgen.TabIndex = 18;
+            this.numUpDownRentgen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownRentgen.Location = new System.Drawing.Point(177, 383);
+            this.numUpDownRentgen.Name = "numUpDownRentgen";
+            this.numUpDownRentgen.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownRentgen.TabIndex = 18;
             // 
             // lblRentgen
             // 
@@ -303,13 +304,13 @@
             this.lblManipolations.TabIndex = 23;
             this.lblManipolations.Text = "Манипулации";
             // 
-            // numericUpDownSuture
+            // numUpDownSuture
             // 
-            this.numericUpDownSuture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownSuture.Location = new System.Drawing.Point(177, 504);
-            this.numericUpDownSuture.Name = "numericUpDownSuture";
-            this.numericUpDownSuture.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownSuture.TabIndex = 25;
+            this.numUpDownSuture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownSuture.Location = new System.Drawing.Point(177, 504);
+            this.numUpDownSuture.Name = "numUpDownSuture";
+            this.numUpDownSuture.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownSuture.TabIndex = 25;
             // 
             // lblSuture
             // 
@@ -321,13 +322,13 @@
             this.lblSuture.TabIndex = 24;
             this.lblSuture.Text = "Шев";
             // 
-            // numericUpDownForeignMather
+            // numUpDownForeignMather
             // 
-            this.numericUpDownForeignMather.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownForeignMather.Location = new System.Drawing.Point(177, 535);
-            this.numericUpDownForeignMather.Name = "numericUpDownForeignMather";
-            this.numericUpDownForeignMather.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownForeignMather.TabIndex = 27;
+            this.numUpDownForeignMather.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownForeignMather.Location = new System.Drawing.Point(177, 535);
+            this.numUpDownForeignMather.Name = "numUpDownForeignMather";
+            this.numUpDownForeignMather.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownForeignMather.TabIndex = 27;
             // 
             // lblForeignMather
             // 
@@ -339,13 +340,13 @@
             this.lblForeignMather.TabIndex = 26;
             this.lblForeignMather.Text = "Вадене чуждо тяло";
             // 
-            // numericUpDownBandaging
+            // numUpDownBandaging
             // 
-            this.numericUpDownBandaging.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownBandaging.Location = new System.Drawing.Point(177, 564);
-            this.numericUpDownBandaging.Name = "numericUpDownBandaging";
-            this.numericUpDownBandaging.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownBandaging.TabIndex = 29;
+            this.numUpDownBandaging.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownBandaging.Location = new System.Drawing.Point(177, 564);
+            this.numUpDownBandaging.Name = "numUpDownBandaging";
+            this.numUpDownBandaging.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownBandaging.TabIndex = 29;
             // 
             // lblBandaging
             // 
@@ -357,13 +358,13 @@
             this.lblBandaging.TabIndex = 28;
             this.lblBandaging.Text = "Превръзка";
             // 
-            // numericUpDownImobilizations
+            // numUpDownImobilizations
             // 
-            this.numericUpDownImobilizations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownImobilizations.Location = new System.Drawing.Point(177, 594);
-            this.numericUpDownImobilizations.Name = "numericUpDownImobilizations";
-            this.numericUpDownImobilizations.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownImobilizations.TabIndex = 31;
+            this.numUpDownImobilizations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownImobilizations.Location = new System.Drawing.Point(177, 594);
+            this.numUpDownImobilizations.Name = "numUpDownImobilizations";
+            this.numUpDownImobilizations.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownImobilizations.TabIndex = 31;
             // 
             // lblImobilization
             // 
@@ -375,13 +376,13 @@
             this.lblImobilization.TabIndex = 30;
             this.lblImobilization.Text = "Имобилизации";
             // 
-            // numericUpDownOther
+            // numUpDownOther
             // 
-            this.numericUpDownOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDownOther.Location = new System.Drawing.Point(177, 623);
-            this.numericUpDownOther.Name = "numericUpDownOther";
-            this.numericUpDownOther.Size = new System.Drawing.Size(46, 26);
-            this.numericUpDownOther.TabIndex = 33;
+            this.numUpDownOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numUpDownOther.Location = new System.Drawing.Point(177, 623);
+            this.numUpDownOther.Name = "numUpDownOther";
+            this.numUpDownOther.Size = new System.Drawing.Size(46, 26);
+            this.numUpDownOther.TabIndex = 33;
             // 
             // lblOther
             // 
@@ -405,13 +406,16 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
-            // dataGridView1
+            // dgvMedical
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(235, 54);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1217, 828);
-            this.dataGridView1.TabIndex = 35;
+            this.dgvMedical.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMedical.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedical.Location = new System.Drawing.Point(235, 54);
+            this.dgvMedical.Name = "dgvMedical";
+            this.dgvMedical.Size = new System.Drawing.Size(1217, 828);
+            this.dgvMedical.TabIndex = 35;
             // 
             // txtDataTime
             // 
@@ -438,29 +442,29 @@
             this.ClientSize = new System.Drawing.Size(1464, 894);
             this.Controls.Add(this.txtDataTime);
             this.Controls.Add(this.lblDateTime);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMedical);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.numericUpDownOther);
+            this.Controls.Add(this.numUpDownOther);
             this.Controls.Add(this.lblOther);
-            this.Controls.Add(this.numericUpDownImobilizations);
+            this.Controls.Add(this.numUpDownImobilizations);
             this.Controls.Add(this.lblImobilization);
-            this.Controls.Add(this.numericUpDownBandaging);
+            this.Controls.Add(this.numUpDownBandaging);
             this.Controls.Add(this.lblBandaging);
-            this.Controls.Add(this.numericUpDownForeignMather);
+            this.Controls.Add(this.numUpDownForeignMather);
             this.Controls.Add(this.lblForeignMather);
-            this.Controls.Add(this.numericUpDownSuture);
+            this.Controls.Add(this.numUpDownSuture);
             this.Controls.Add(this.lblSuture);
             this.Controls.Add(this.lblManipolations);
-            this.Controls.Add(this.numericUpDownKAT);
+            this.Controls.Add(this.numUpDownKAT);
             this.Controls.Add(this.lblKAT);
-            this.Controls.Add(this.numericUpDownUZ);
+            this.Controls.Add(this.numUpDownUZ);
             this.Controls.Add(this.lblUZ);
-            this.Controls.Add(this.numericUpDownRentgen);
+            this.Controls.Add(this.numUpDownRentgen);
             this.Controls.Add(this.lblRentgen);
             this.Controls.Add(this.lblOD);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numUpDownKLabUrina);
             this.Controls.Add(this.lblUrina);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numUpDownKLabOther);
             this.Controls.Add(this.lblKLabOther);
             this.Controls.Add(this.lblKLab);
             this.Controls.Add(this.numUpDownКК);
@@ -479,17 +483,17 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownКК)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKAT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUZ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRentgen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSuture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownForeignMather)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBandaging)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownImobilizations)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOther)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabOther)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKLabUrina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownKAT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownUZ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownRentgen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownSuture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownForeignMather)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownBandaging)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownImobilizations)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownOther)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedical)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,30 +513,30 @@
         private System.Windows.Forms.Label lblKLabKK;
         private System.Windows.Forms.NumericUpDown numUpDownКК;
         private System.Windows.Forms.Label lblKLab;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numUpDownKLabOther;
         private System.Windows.Forms.Label lblKLabOther;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numUpDownKLabUrina;
         private System.Windows.Forms.Label lblUrina;
         private System.Windows.Forms.Label lblOD;
-        private System.Windows.Forms.NumericUpDown numericUpDownKAT;
+        private System.Windows.Forms.NumericUpDown numUpDownKAT;
         private System.Windows.Forms.Label lblKAT;
-        private System.Windows.Forms.NumericUpDown numericUpDownUZ;
+        private System.Windows.Forms.NumericUpDown numUpDownUZ;
         private System.Windows.Forms.Label lblUZ;
-        private System.Windows.Forms.NumericUpDown numericUpDownRentgen;
+        private System.Windows.Forms.NumericUpDown numUpDownRentgen;
         private System.Windows.Forms.Label lblRentgen;
         private System.Windows.Forms.Label lblManipolations;
-        private System.Windows.Forms.NumericUpDown numericUpDownSuture;
+        private System.Windows.Forms.NumericUpDown numUpDownSuture;
         private System.Windows.Forms.Label lblSuture;
-        private System.Windows.Forms.NumericUpDown numericUpDownForeignMather;
+        private System.Windows.Forms.NumericUpDown numUpDownForeignMather;
         private System.Windows.Forms.Label lblForeignMather;
-        private System.Windows.Forms.NumericUpDown numericUpDownBandaging;
+        private System.Windows.Forms.NumericUpDown numUpDownBandaging;
         private System.Windows.Forms.Label lblBandaging;
-        private System.Windows.Forms.NumericUpDown numericUpDownImobilizations;
+        private System.Windows.Forms.NumericUpDown numUpDownImobilizations;
         private System.Windows.Forms.Label lblImobilization;
-        private System.Windows.Forms.NumericUpDown numericUpDownOther;
+        private System.Windows.Forms.NumericUpDown numUpDownOther;
         private System.Windows.Forms.Label lblOther;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMedical;
         private System.Windows.Forms.TextBox txtDataTime;
         private System.Windows.Forms.Label lblDateTime;
     }

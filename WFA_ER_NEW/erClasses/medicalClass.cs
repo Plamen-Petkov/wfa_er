@@ -40,15 +40,15 @@ namespace WFA_ER_NEW.erClasses
             DataTable dt = new DataTable();
             try
             {
-                string sql = "SELECT * FROM ambulanse";
+                string sql = "SELECT * FROM ambulance";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 conn.Open();
                 da.Fill(dt);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                //MessageBox.Show(ex);
+                MessageBox.Show(ex.Message);
 
             }
             finally

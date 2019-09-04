@@ -41,20 +41,24 @@ namespace WFA_ER_NEW
                 SqlCommand sc = new SqlCommand("SELECT * FROM mkb10", conn);
                 SqlDataReader reader;
                 reader = sc.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.Columns.Add("mkb", typeof(string));
-                dt.Columns.Add("diagnose", typeof(string));
-                dt.Load(reader);
+                DataTable dtMkb = new DataTable();
+                dtMkb.Columns.Add("mkb", typeof(string));
+                dtMkb.Columns.Add("diagnose", typeof(string));
+                dtMkb.Load(reader);
                 cmbMKB.ValueMember = "mkb";
-                cmbMKB.DataSource = dt;
+                cmbMKB.DataSource = dtMkb;
                 conn.Close();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
 
             }
+
+            // Load data on data gridview
+            DataTable dtMedical = m.Select();
+            dgvMedical.DataSource = dtMedical;
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -64,6 +68,17 @@ namespace WFA_ER_NEW
             m.LastName = txtLastName.Text;
             m.DataTime = txtDataTime.Text;
             m.mkb = cmbMKB.Text;
+            m.KLabKK = Convert.ToInt32(numUpDownКК.Value);
+            m.KLabOther = Convert.ToInt32(numUpDownKLabOther.Value);
+            m.KLabUrina = Convert.ToInt32(numUpDownKLabOther.Value);
+            m.Rentgen = Convert.ToInt32(numUpDownRentgen.Value);
+            m.UZD = Convert.ToInt32(numUpDownUZ.Value);
+            m.KAT = Convert.ToInt32(numUpDownKAT.Value);
+            m.suture = Convert.ToInt32(numUpDownSuture.Value);
+            m.foreignMatter = Convert.ToInt32(numUpDownForeignMather.Value);
+            m.bandaging = Convert.ToInt32(numUpDownBandaging.Value);
+            m.Immobilization = Convert.ToInt32(numUpDownImobilizations.Value);
+            m.other = Convert.ToInt32(numUpDownOther.Value);
 
             bool success = m.Insert(m);
             if (success)
@@ -74,6 +89,10 @@ namespace WFA_ER_NEW
             {
                 MessageBox.Show("Problem");
             }
+
+            // Load data on data gridview
+            DataTable dtMedical = m.Select();
+            dgvMedical.DataSource = dtMedical;
 
         }
     }
